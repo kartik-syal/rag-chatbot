@@ -11,7 +11,6 @@ This project implements a Retrieval-Augmented Generation (RAG) chatbot that can 
 - [Usage](#usage)
 - [Example Queries](#example-queries)
 - [Environment Variables](#environment-variables)
-- [License](#license)
 
 ## Features
 - Load and process PDF documents
