@@ -1,7 +1,3 @@
-Certainly! Below is a comprehensive README for your project.
-
----
-
 # RAG Chatbot for Oil Well Design Specifications
 
 This project implements a Retrieval-Augmented Generation (RAG) chatbot that can search through PDF documents containing design specifications for oil wells and respond to user queries. The solution is scalable and supports searching thousands of documents.
@@ -26,7 +22,6 @@ This project implements a Retrieval-Augmented Generation (RAG) chatbot that can 
 
 ## Prerequisites
 - Python 3.10+
-- Node.js and npm (for the frontend)
 - pip (Python package installer)
 
 ## Installation
@@ -37,12 +32,7 @@ This project implements a Retrieval-Augmented Generation (RAG) chatbot that can 
     cd rag-chatbot
     ```
 
-2. **Setup Backend**:
-    - Navigate to the `backend` directory:
-      ```bash
-      cd backend
-      ```
-
+2. **Setup Virtual Environment**:
     - Create a virtual environment and activate it:
       ```bash
       python -m venv venv
@@ -54,27 +44,16 @@ This project implements a Retrieval-Augmented Generation (RAG) chatbot that can 
       pip install -r requirements.txt
       ```
 
-3. **Setup Frontend**:
-    - Navigate to the `frontend` directory:
-      ```bash
-      cd frontend
-      ```
-
-    - Install the required Node.js packages:
-      ```bash
-      npm install
-      ```
-
-## Running the Project
-
-1. **Configure Environment Variables**:
+3. **Configure Environment Variables**:
     - Create a `.env` file in the `backend` directory with the following content:
       ```env
       OPENAI_API_KEY=your_openai_api_key
       ```
 
-2. **Start the Backend**:
-    - Navigate to the `backend` directory (if not already there):
+## Running the Project
+
+1. **Start the Backend**:
+    - Navigate to the `backend` directory:
       ```bash
       cd backend
       ```
@@ -84,7 +63,7 @@ This project implements a Retrieval-Augmented Generation (RAG) chatbot that can 
       python app.py
       ```
 
-3. **Start the Frontend**:
+2. **Start the Frontend**:
     - Navigate to the `frontend` directory:
       ```bash
       cd frontend
@@ -100,18 +79,18 @@ This project implements a Retrieval-Augmented Generation (RAG) chatbot that can 
 ```
 rag-chatbot/
 │
+├── .env
+├── requirements.txt
+│
 ├── backend/
-│   ├── .env
 │   ├── app.py
-│   ├── requirements.txt
 │   └── model/
 │       ├── document_processing.py
 │       ├── rag_chain.py
 │       └── __init__.py
 │
 └── frontend/
-    ├── streamlit_app.py
-    └── package.json
+    └── streamlit_app.py
 ```
 
 ## Usage
@@ -126,10 +105,7 @@ rag-chatbot/
   - Sample query: "Compare high-pressure separator specifications across these wells and identify key differences - VOSS 14-11H, RECKARD 31-27H, KUPPER 34-10H"
   
 - **Compare export pump specifications across wells**:
-  - Sample query: "Compare export pump specifications across these wells and identify key differences."
-
-- **Extract a diagram from the document**:
-  - Sample query: "Extract a diagram from the document."
+  - Sample query: "Compare export pump specifications across these wells and identify key differences - VOSS 14-11H, RECKARD 31-27H, KUPPER 34-10H"
 
 ## Environment Variables
 

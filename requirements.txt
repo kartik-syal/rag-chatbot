@@ -1,0 +1,15 @@
+# Backend dependencies
+fastapi
+uvicorn
+pydantic
+python-dotenv
+pypdf
+langchain
+langchain_openai
+langchain_chroma
+langchain_community
+langchain_core
+
+# Frontend dependencies
+streamlit
+requests
